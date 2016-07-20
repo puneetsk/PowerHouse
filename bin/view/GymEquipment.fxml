@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GymEquipmentController">
+   <children>
+      <AnchorPane id="logbg" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <ButtonBar layoutX="266.0" layoutY="124.0" prefHeight="40.0" prefWidth="200.0" />
+            <Button fx:id="addEqp" layoutX="241.0" layoutY="416.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="120.0" text="Add">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="175.0" layoutY="267.0" text="Name" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="309.0" text="EquipID" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="147.0" layoutY="357.0" text="Maintenance Duration" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="eqpId" layoutX="429.0" layoutY="271.0" />
+            <TextField fx:id="eqpName" layoutX="429.0" layoutY="313.0" />
+            <TextField fx:id="eqpMtd" layoutX="429.0" layoutY="361.0" />
+            <Button fx:id="backbutton" layoutX="59.0" layoutY="45.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="69.0" text="Back" />
+            <Label layoutX="225.0" layoutY="38.0" text="Equipment" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="delEqp" layoutX="363.0" layoutY="416.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="120.0" text="Delete">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            
+          
+         </children>
+         <stylesheets>
+            <URL value="@../../style.css" />
+            <URL value="@../../style.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

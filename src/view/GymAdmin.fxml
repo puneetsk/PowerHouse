@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="259.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GymAdminController">
+   <children>
+      <AnchorPane id="logbg" prefHeight="500.0" prefWidth="600.0" stylesheets="@../../bin/style.css">
+         <children>
+            <Button id="grey" fx:id="admCust" layoutX="284.0" layoutY="218.0" mnemonicParsing="false" onAction="#customer" prefHeight="40.0" prefWidth="275.0" stylesheets="@../../style.css" text="Customer">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Calisto MT" size="18.0" />
+               </font>
+            </Button>
+            <Button id="grey" fx:id="admEmp" layoutX="284.0" layoutY="262.0" mnemonicParsing="false" onAction="#employee" prefHeight="40.0" prefWidth="275.0" stylesheets="@../../style.css" text="Employee">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Calisto MT" size="18.0" />
+               </font>
+            </Button>
+            <Button id="grey" fx:id="admEqp" layoutX="284.0" layoutY="351.0" mnemonicParsing="false" onAction="#equipment" prefHeight="40.0" prefWidth="275.0" stylesheets="@../../style.css" text="Equipment">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Calisto MT" size="18.0" />
+               </font>
+            </Button>
+            <Button id="grey" fx:id="admNut" layoutX="284.0" layoutY="396.0" mnemonicParsing="false" onAction="#nutrition" prefHeight="40.0" prefWidth="275.0" stylesheets="@../../style.css" text="Nutrition">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Calisto MT" size="18.0" />
+               </font>
+            </Button>
+            <Button id="grey" fx:id="admExe" layoutX="284.0" layoutY="305.0" mnemonicParsing="false" onAction="#exercise" prefHeight="40.0" prefWidth="275.0" stylesheets="@../../style.css" text="Exercise">
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <font>
+                  <Font name="Calisto MT" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="320.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/14.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="2.0" text="Welcome to PowerHouse Gym Admin" textFill="WHITE">
+               <font>
+                  <Font name="Kristen ITC" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

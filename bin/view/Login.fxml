@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane id="logbg" blendMode="DARKEN" layoutY="1.0" prefHeight="500.0" prefWidth="600.0" stylesheets="@../../style.css">
+         <children>
+            <Button id="grey" fx:id="logBTN" defaultButton="true" layoutX="471.0" layoutY="274.0" mnemonicParsing="false" onAction="#login" prefHeight="17.0" prefWidth="69.0" stylesheets="@../../style.css" text="Login">
+               <font> 
+                  <Font name="Calisto MT" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </Button>
+            <TextField fx:id="logUN" layoutX="349.0" layoutY="207.0" maxHeight="22.0" promptText="Username">
+               <font>
+                  <Font name="Calisto MT" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="logPW" layoutX="350.0" layoutY="238.0" prefHeight="22.0" promptText="Password">
+               <font>
+                  <Font name="Calisto MT" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="0.0" width="0.0" />
+               </effect>
+            </PasswordField>
+            <Label alignment="CENTER" layoutX="166.0" layoutY="11.0" text="POWER HOUSE GYM" textFill="#fcf9f9">
+               <font>
+                  <Font name="Kristen ITC" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="logSTS" layoutX="356.0" layoutY="336.0" prefHeight="37.0" prefWidth="194.0" textFill="#fffafa">
+               <font>
+                  <Font name="Bookman Old Style" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="119.0" fitWidth="194.0" layoutX="356.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/14.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

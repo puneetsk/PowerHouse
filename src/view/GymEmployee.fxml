@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GymEmployeeController">
+   <children>
+      <AnchorPane id="logbg" prefHeight="500.0" prefWidth="800.0" stylesheets="@../../style.css">
+         <children>
+            <Button fx:id="addEmp" layoutX="74.0" layoutY="212.0" mnemonicParsing="false" onAction="#addEmployee" prefHeight="35.0" prefWidth="120.0" text="Add">
+               <font>
+                  <Font name="Calisto MT" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Label layoutX="269.0" layoutY="226.0" prefHeight="25.0" prefWidth="64.0" text="Name" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="267.0" layoutY="180.0" prefHeight="33.0" prefWidth="95.0" text="EmpID" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="258.0" prefHeight="33.0" prefWidth="74.0" text="Type" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="303.0" prefHeight="33.0" prefWidth="85.0" text="Phone#" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="346.0" prefHeight="33.0" prefWidth="95.0" text="Address" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="264.0" layoutY="388.0" prefHeight="33.0" prefWidth="74.0" text="Salary" textFill="#737eff">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtempName" layoutX="354.0" layoutY="230.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="txtempid" layoutX="354.0" layoutY="184.0" prefHeight="25.0" prefWidth="147.0" />
+            <TextField fx:id="txtempTy" layoutX="354.0" layoutY="262.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="txtempPh" layoutX="354.0" layoutY="307.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="txtempAdr" layoutX="354.0" layoutY="350.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="txtempSal" layoutX="354.0" layoutY="392.0" prefHeight="25.0" prefWidth="150.0" />
+            <Button fx:id="backbutton" layoutX="42.0" layoutY="35.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="64.0" text="Back" />
+            <Label fx:id="employee" layoutX="227.0" layoutY="26.0" prefHeight="49.0" prefWidth="147.0" text="Employees" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="dropDown2" layoutX="175.0" layoutY="106.0" prefWidth="150.0" promptText="View Employees" />
+            <Button fx:id="btnok" layoutX="332.0" layoutY="106.0" mnemonicParsing="false" onAction="#showempdetails" text="Ok" />
+            <Button fx:id="updEmp" layoutX="74.0" layoutY="257.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="120.0" text="Update">
+               <font>
+                  <Font name="Calisto MT" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="delEmp" layoutX="74.0" layoutY="302.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="120.0" styleClass="cd" stylesheets="@../../style.css" text="Delete">
+               <font>
+                  <Font name="Calisto MT" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button fx:id="clr" layoutX="484.0" layoutY="39.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="85.0" text="Clear Fields" />
+            <Label fx:id="empvaltext1" layoutX="510.0" layoutY="184.0" prefHeight="25.0" prefWidth="260.0" textFill="#ff4040">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="empvaltext2" layoutX="510.0" layoutY="230.0" prefHeight="25.0" prefWidth="250.0" textFill="#ff4040">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="empvaltext3" layoutX="513.0" layoutY="262.0" prefHeight="25.0" prefWidth="260.0" textFill="#ff4040">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="empvaltext4" layoutX="513.0" layoutY="307.0" prefHeight="25.0" prefWidth="260.0" textFill="#ff4040">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="empvaltext5" layoutX="513.0" layoutY="350.0" prefHeight="25.0" prefWidth="250.0" textFill="#ff4040">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="empvaltext6" layoutX="508.0" layoutY="392.0" prefHeight="25.0" prefWidth="250.0" textFill="#ff4040">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

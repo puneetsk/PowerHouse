@@ -1,0 +1,87 @@
+Login.fxml
+
+Username-Textfield      : logUN
+Password-Passwordfield  : logPW
+Login-Button    	: logBTN
+
+-------------------------------------------------------------------------
+
+GymAdmin.fxml
+
+Customer-Button: admCust
+Employee-Button: admEmp
+Exercise-Button: admExe
+Equipment-Button: admEqp
+Nutrition-Button: admNut
+
+----------------------------------------------------------------------------
+
+GymCustomer.fxml
+
+Add customer-Button: addCust
+Name-Textfield: custName
+CustID-Textfield: custId
+Address-Textfield: custAdr
+Phone#-Textfield: custPh
+Trainer-Textfield: custTr
+Subscription-Textfield: custSub
+Height-Textfield: custHt
+Weight-Textfield: custHt
+BMI-Textfield: custBmi
+Exercise-Textfiled: custExe
+<---Button: custPr
+-->-Button: custNxt
+
+------------------------------------------------------------------------------
+
+GymEmployee.fxml
+
+Add employee-Button: addEmp
+Name-Textfield: empName
+EmpID-Textfield: empId
+Type-Textfield: empTy
+Phone#-Textfield: empPh
+Address-Textfield: empAdr
+Salary-Textfield: empSal
+<---Button: empPr
+-->-Button: empNxt
+
+-----------------------------------------------------------------------------
+
+GymEquipment.fxml
+
+Add equipment-Button: addEqp
+Name-Textfield: eqpName
+EquipID-Textfield: eqpId
+Bought-Textfield: eqpbgt
+Maintenance Duration-Textfield:eqpMtd
+<---Button: eqpPr
+-->-Button: eqpNxt
+
+-------------------------------------------------------------------------------
+
+
+GymExercise.fxml
+
+Add exercise-Button: addExe
+Name-Textfield: exeName
+ExeID-Textfield: exeId
+Program-Combobox: exePrgm
+<---Button: exePr
+-->-Button: exeNxt
+
+-------------------------------------------------------------------------------
+
+GymNutrition.fxml
+
+Add nutrition-Button: addNut
+Name-Textfield: nutName
+EquipID-Textfield: nutId
+Type-Combobox: nutTy
+Assigned to-Combobox: nutAsgn
+<---Button: nutPr
+-->-Button: nutNxt
+
+--------------------------------------------------------------------------------
+
+

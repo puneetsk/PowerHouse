@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GymCustomerController">
+   <children>
+      <AnchorPane id="logbg" prefHeight="500.0" prefWidth="800.0" stylesheets="@../../style.css">
+         <children>
+            <Button fx:id="addCust" layoutX="128.0" layoutY="435.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="120.0" styleClass="cd" stylesheets="@../../bin/style.css" text="Add">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="14.0" layoutY="238.0" prefHeight="25.0" prefWidth="73.0" text="Name" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="278.0" prefHeight="25.0" prefWidth="84.0" text="CustID" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="314.0" prefHeight="25.0" prefWidth="84.0" text="Address" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="350.0" prefHeight="25.0" prefWidth="84.0" text="Phone#" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="387.0" prefHeight="25.0" prefWidth="84.0" text="Age" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="521.0" layoutY="251.0" prefHeight="25.0" prefWidth="73.0" text="Height" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="527.0" layoutY="314.0" prefHeight="25.0" prefWidth="73.0" text="Weight" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="521.0" layoutY="375.0" prefHeight="25.0" prefWidth="73.0" text="Exercise" textFill="#737eee">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="custName" layoutX="164.0" layoutY="238.0" />
+            <TextField fx:id="custId" layoutX="164.0" layoutY="278.0" />
+            <TextField fx:id="custAdr" layoutX="164.0" layoutY="314.0" />
+            <TextField fx:id="custPh" layoutX="164.0" layoutY="350.0" />
+            <TextField fx:id="custAge" layoutX="164.0" layoutY="387.0" />
+            <TextField fx:id="Ht" layoutX="617.0" layoutY="251.0" promptText="Enter Height in CM" />
+            <TextField fx:id="Wt" layoutX="617.0" layoutY="314.0" promptText="Enter Weight in KG" />
+            <Button fx:id="backbutton" layoutX="46.0" layoutY="43.0" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="64.0" text="Back" />
+            <Button fx:id="delCust" layoutX="401.0" layoutY="435.0" mnemonicParsing="false" onAction="#del" prefHeight="35.0" prefWidth="120.0" text="Delete">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button id="b" fx:id="updCust" layoutX="263.0" layoutY="435.0" mnemonicParsing="false" onAction="#updateCustDetails" prefHeight="35.0" prefWidth="120.0" stylesheets="@../../style.css" text="Update">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="230.0" layoutY="39.0" prefHeight="45.0" prefWidth="160.0" text="Customer" textFill="#fffefe">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="custExe" layoutX="617.0" layoutY="375.0" prefWidth="150.0" />
+            <ComboBox fx:id="dropDown1" layoutX="188.0" layoutY="110.0" prefWidth="150.0" promptText="View Customer" />
+            <Button fx:id="btnok" layoutX="349.0" layoutY="110.0" mnemonicParsing="false" onAction="#showCustDetails" styleClass="cd" stylesheets="@../../bin/style.css" text="OK" />
+            <Label fx:id="lbl6" layoutX="188.0" layoutY="157.0" prefHeight="39.0" prefWidth="197.0" text="" textFill="#fcfcfc">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Button fx:id="clr" layoutX="486.0" layoutY="50.0" mnemonicParsing="false" onAction="#clear" prefHeight="39.0" prefWidth="77.0" text="Clear Fields" />
+            <Label fx:id="custval1" layoutX="335.0" layoutY="234.0" prefHeight="25.0" prefWidth="170.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="custval2" layoutX="335.0" layoutY="278.0" prefHeight="25.0" prefWidth="170.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="custval3" layoutX="335.0" layoutY="314.0" prefHeight="25.0" prefWidth="170.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="custval4" layoutX="335.0" layoutY="350.0" prefHeight="25.0" prefWidth="176.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="custval5" layoutX="335.0" layoutY="387.0" prefHeight="25.0" prefWidth="170.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="custval6" layoutX="587.0" layoutY="209.0" prefHeight="25.0" prefWidth="190.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="custval7" layoutX="601.0" layoutY="281.0" prefHeight="25.0" prefWidth="176.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="custval8" layoutX="601.0" layoutY="350.0" prefHeight="20.0" prefWidth="176.0" textFill="#ff2626">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
